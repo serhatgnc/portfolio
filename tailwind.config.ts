@@ -27,11 +27,9 @@ const config = {
     },
     extend: {
       colors: {
-        palette: {
-          1: "#2E0249",
-          2: "#570A57",
-          3: "#A91079",
-          4: "#F806CC",
+        custom: {
+          1: "#11001C",
+          2: "#0E0018",
         },
         black: {
           DEFAULT: "#000",
