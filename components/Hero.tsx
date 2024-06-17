@@ -10,8 +10,6 @@ const Hero = async () => {
   );
   const quotes = (await response.json()) as Array<{ content: string }>;
 
-  console.log(quotes);
-
   return (
     <div className="pb-20 pt-36">
       <div>
