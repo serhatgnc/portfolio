@@ -4,12 +4,6 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { IoNavigate } from "react-icons/io5";
 
 const Hero = async () => {
-  const response = await fetch(
-    "https://api.quotable.io/quotes/random?tags=motivational",
-    { cache: "no-store" }
-  );
-  const quotes = (await response.json()) as Array<{ content: string }>;
-
   return (
     <div className="pb-20 pt-36">
       <div>
@@ -31,7 +25,6 @@ const Hero = async () => {
       </div>
       <div className=" flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center gap-4 md:gap-0">
-          <p className="lg:text-base md:text-sm text-xs">{quotes[0].content}</p>
           <TextGenerateEffect
             className="text-center text-[36px] md:text-5xl lg:text-6xl"
             words="Crafting Digital Experiences with Passion and Precision"
