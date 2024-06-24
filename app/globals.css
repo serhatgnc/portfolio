@@ -91,3 +91,19 @@
 ::selection {
   background: #e27396;
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #11001c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d90368;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a20254;
+}

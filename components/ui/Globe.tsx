@@ -4,7 +4,7 @@ import { Color, Scene, Fog, PerspectiveCamera, Vector3 } from "three";
 import ThreeGlobe from "three-globe";
 import { useThree, Object3DNode, Canvas, extend } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import countries from "@/data/globe.json";
+import countries from "data/globe.json";
 declare module "@react-three/fiber" {
   interface ThreeElements {
     threeGlobe: Object3DNode<ThreeGlobe, typeof ThreeGlobe>;
@@ -29,7 +29,7 @@ type Position = {
 
 export type GlobeConfig = {
   pointSize?: number;
-   globeColor?: string;
+  globeColor?: string;
   showAtmosphere?: boolean;
   atmosphereColor?: string;
   atmosphereAltitude?: number;

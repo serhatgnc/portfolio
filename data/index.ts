@@ -1,4 +1,5 @@
-import { BentoGridItemProps } from "@/components/ui/BentoGrid";
+import { BentoGridItemProps } from "components/ui/BentoGrid";
+import { IoCloudDownload, IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
 
 export const navItems = [
   { name: "About", link: "#about" },
@@ -68,5 +69,24 @@ export const gridItems: Array<BentoGridItemProps> = [
     titleClassName: "justify-center md:max-w-full max-w-60 text-center",
     img: "",
     spareImg: "",
+  },
+];
+
+export const socials = [
+  {
+    id: 1,
+    text: "Resume",
+    icon: IoCloudDownload,
+    to: "./resume.pdf",
+  },
+  {
+    id: 2,
+    icon: IoLogoGithub,
+    to: "https://github.com/serhatgnc",
+  },
+  {
+    id: 3,
+    icon: IoLogoLinkedin,
+    to: "https://www.linkedin.com/in/serhat-genc/",
   },
 ];

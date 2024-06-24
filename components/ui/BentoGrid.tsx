@@ -1,9 +1,9 @@
 "use client";
-import { cn } from "@/utils/cn";
+import { cn } from "utils/cn";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
 import { useState } from "react";
-import animationData from "@/data/confetti.json";
+import animationData from "data/confetti.json";
 import Lottie from "react-lottie";
 import ShimmerButton from "./ShimmerButton";
 import { IoCopy } from "react-icons/io5";

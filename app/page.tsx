@@ -1,8 +1,9 @@
-import Blogs from "@/components/Blogs";
-import Grid from "@/components/Grid";
-import Hero from "@/components/Hero";
-import { FloatingNav } from "@/components/ui/FloatingNavbar";
-import { navItems } from "@/data";
+import { navItems } from "data";
+import Blogs from "@components/Blogs";
+import Footer from "@components/Footer";
+import Hero from "@components/Hero";
+import { FloatingNav } from "@components/ui/FloatingNavbar";
+import Grid from '@components/Grid';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <Hero />
         <Grid />
         <Blogs />
+        <Footer />
       </div>
     </main>
   );
