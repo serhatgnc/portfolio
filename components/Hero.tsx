@@ -34,7 +34,7 @@ const Hero = async () => {
           </p>
           <a href="#about">
             <ShimmerButton
-              text="Get to know me"
+              text="Know me better"
               icon={<IoNavigate />}
               position="right"
               otherClasses="gap-1"

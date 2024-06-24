@@ -8,7 +8,8 @@ export const navItems = [
 export const gridItems: Array<BentoGridItemProps> = [
   {
     id: 1,
-    title: "Something something...",
+    title:
+      "Leveraging the power of modern frameworks like React, Next.js, and TypeScript to create user-centric, performant, and scalable web applications.",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -47,16 +48,15 @@ export const gridItems: Array<BentoGridItemProps> = [
     img: "",
     spareImg: "/b4.svg",
   },
-
   {
     id: 5,
-    title: "Currently learning Next.js along with Supabase",
+    title: "Committed to clean, modular, and efficient code.",
     description: "",
     className: "md:col-span-3 md:row-span-2",
-    imgClassName: "absolute right-0 bottom-0 md:w-96 w-44",
+    imgClassName: "absolute -right-5 -bottom-5 md:w-3/4 w-72",
     titleClassName:
-      "justify-center md:justify-start md:max-w-full lg:justify-center max-w-60 lg:max-w-64 xl:max-w-96",
-    img: "/b5.svg",
+      "justify-center justify-start sm:justify-center sm:max-w-60 lg:justify-center max-w-full lg:max-w-64 xl:max-w-96",
+    img: "/codesnippet.png",
     spareImg: "",
   },
   {
