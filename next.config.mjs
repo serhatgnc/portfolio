@@ -17,6 +17,7 @@ export default withSentryConfig(nextConfig, {
   project: "javascript-nextjs",
   silent: !process.env.CI,
   widenClientFileUpload: true,
+  authToken: process.env.SENTRY_AUTH_TOKEN,
   hideSourceMaps: true,
   disableLogger: true,
   automaticVercelMonitors: true,
