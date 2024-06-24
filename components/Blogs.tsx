@@ -27,7 +27,7 @@ export const Blogs = async () => {
         <h1 className="heading font-bold text-center text-[#d90368] relative z-20">
           Blogs
         </h1>
-        <div className="flex flex-wrap items-center justify-center p-4 md:gap-24 mt-10">
+        <div className="flex flex-wrap items-center justify-center sm:gap-24 sm:mt-10">
           {blogData.map(
             ({
               id,
@@ -45,7 +45,7 @@ export const Blogs = async () => {
                 key={id}
               >
                 <PinContainer title={url} href={url}>
-                  <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[16vh] mb-5">
+                  <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[10rem] sm:h-[14rem] mb-5">
                     <Image
                       src={social_image}
                       alt="cover"
@@ -69,7 +69,7 @@ export const Blogs = async () => {
                   <div className="flex my-3 gap-1">
                     {tag_list.map((item) => (
                       <div
-                        className="sm:text-xs text-[0.5rem] py-1 px-2 border bg-[#e27396] rounded-xl"
+                        className="sm:text-xs text-[0.5rem] py-1 px-2 border bg-[#d90368] rounded-xl"
                         key={item}
                       >
                         {item}
