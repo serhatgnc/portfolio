@@ -8,6 +8,8 @@ import Lottie from "react-lottie";
 import ShimmerButton from "./ShimmerButton";
 import { IoCopy } from "react-icons/io5";
 import { Meteors } from "./Meteors";
+import { techStackLeft, techStackRight } from "data";
+import { BackgroundBeams } from "./BeamsBackground";
 
 export const BentoGrid = ({
   className,
@@ -49,14 +51,6 @@ export const BentoGridItem = ({
   spareImg,
   titleClassName,
 }: BentoGridItemProps) => {
-  const techStackLeft = ["Jest", "Next.js", "React", "Typescript"];
-  const techStackRight = [
-    "Testing Library",
-    "React Native",
-    "Javascript",
-    "NoSQL",
-  ];
-
   const [copied, setCopied] = useState(false);
 
   const defaultOptions = {
@@ -127,6 +121,7 @@ export const BentoGridItem = ({
           </div>
           {id === 2 ? <GridGlobe /> : null}
           {id === 5 ? <Meteors number={20} /> : null}
+          {id === 1 ? <BackgroundBeams /> : null}
           {id === 3 ? (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
               <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
@@ -157,7 +152,7 @@ export const BentoGridItem = ({
           ) : null}
           {id === 6 ? (
             <div className="relative">
-              <div className="absolute -right-36 -bottom-16 md:-bottom-9 md:-right-20 block">
+              <div className="-z-20 absolute -right-36 -bottom-16 md:-bottom-9 md:-right-20 block">
                 <Lottie options={defaultOptions} height={200} width={400} />
               </div>
               <ShimmerButton

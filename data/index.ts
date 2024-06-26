@@ -10,12 +10,12 @@ export const gridItems: Array<BentoGridItemProps> = [
   {
     id: 1,
     title:
-      "Leveraging the power of modern frameworks like React, Next.js, and TypeScript to create user-centric, performant, and scalable web applications.",
+      "Known for collaborative spirit, problem-solving skills, and dedication to cutting-edge solutions.",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "",
+    img: "./b1.jpg",
     spareImg: "",
   },
   {
@@ -89,4 +89,13 @@ export const socials = [
     icon: IoLogoLinkedin,
     to: "https://www.linkedin.com/in/serhat-genc/",
   },
+];
+
+export const techStackLeft = ["Jest", "Next.js", "React", "Typescript"];
+
+export const techStackRight = [
+  "Testing Library",
+  "React Native",
+  "Javascript",
+  "NoSQL",
 ];

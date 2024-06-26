@@ -17,11 +17,11 @@ const Footer = () => {
           />
         </a>
       </div>
-      <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
+      <div className="flex mt-16 md:gap-0 gap-4 md:flex-row flex-col justify-between items-center">
         <p className="md:text-base text-sm md:font-normal font-light">
           2024 Serhat Genç
         </p>
-        <div className="flex items-center md:gap-3 gap-6">
+        <div className="flex items-center gap-3">
           {socials.map(({ id, icon, text, to }) => (
             <Link
               href={to}

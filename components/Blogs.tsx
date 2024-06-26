@@ -49,7 +49,7 @@ export const Blogs = async () => {
                     <Image
                       src={social_image}
                       alt="cover"
-                      className="z-10 absolute top-0 rounded-2xl"
+                      className="z-10 absolute top-0 rounded-3xl"
                       width={1000}
                       height={500}
                     />
