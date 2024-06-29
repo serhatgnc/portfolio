@@ -1,10 +1,11 @@
 import { navItems } from "data";
-import Blogs from "@components/Blogs";
 import Footer from "@components/Footer";
 import Hero from "@components/Hero";
-import Grid from "@components/Grid";
 import { FloatingNav } from "@components/ui/FloatingNavbar";
-import { Suspense } from "react";
+import dynamic from "next/dynamic";
+
+const Grid = dynamic(() => import("@components/Grid"));
+const Blogs = dynamic(() => import("@components/Blogs"));
 
 export default function Home() {
   return (
@@ -13,9 +14,7 @@ export default function Home() {
         <FloatingNav navItems={navItems} />
         <Hero />
         <Grid />
-        <Suspense>
-          <Blogs />
-        </Suspense>
+        <Blogs />
         <Footer />
       </div>
     </main>
