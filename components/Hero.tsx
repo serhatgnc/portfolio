@@ -3,7 +3,7 @@ import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { IoNavigate } from "react-icons/io5";
 
-const Hero = async () => {
+const Hero = () => {
   return (
     <div className="pb-20 pt-36">
       <div>

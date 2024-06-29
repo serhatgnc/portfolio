@@ -15,7 +15,7 @@ export const gridItems: Array<BentoGridItemProps> = [
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "./b1.jpg",
+    img: "./b1.webp",
     spareImg: "",
   },
   {
@@ -57,7 +57,7 @@ export const gridItems: Array<BentoGridItemProps> = [
     imgClassName: "absolute -right-5 -bottom-5 md:w-3/4 w-72",
     titleClassName:
       "justify-center justify-start sm:justify-center sm:max-w-60 lg:justify-center max-w-full lg:max-w-64 xl:max-w-96",
-    img: "/codesnippet.png",
+    img: "/codesnippet.webp",
     spareImg: "",
   },
   {
@@ -78,16 +78,19 @@ export const socials = [
     text: "Resume",
     icon: IoCloudDownload,
     to: "./resume.pdf",
+    ariaLabel: "resume",
   },
   {
     id: 2,
     icon: IoLogoGithub,
     to: "https://github.com/serhatgnc",
+    ariaLabel: "github profile",
   },
   {
     id: 3,
     icon: IoLogoLinkedin,
     to: "https://www.linkedin.com/in/serhat-genc/",
+    ariaLabel: "linkedin profile",
   },
 ];
 

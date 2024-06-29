@@ -22,11 +22,12 @@ const Footer = () => {
           2024 Serhat Genç
         </p>
         <div className="flex items-center gap-3">
-          {socials.map(({ id, icon, text, to }) => (
+          {socials.map(({ id, icon, text, to, ariaLabel }) => (
             <Link
               href={to}
               target="_blank"
               key={id}
+              aria-label={ariaLabel}
               className="p-2 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-[#d90368] rounded-lg gap-1"
             >
               {text ? <p className="text-xs">{text}</p> : null}

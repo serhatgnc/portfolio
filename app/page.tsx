@@ -4,6 +4,7 @@ import Footer from "@components/Footer";
 import Hero from "@components/Hero";
 import Grid from "@components/Grid";
 import { FloatingNav } from "@components/ui/FloatingNavbar";
+import { Suspense } from "react";
 
 export default function Home() {
   return (
@@ -12,7 +13,9 @@ export default function Home() {
         <FloatingNav navItems={navItems} />
         <Hero />
         <Grid />
-        <Blogs />
+        <Suspense>
+          <Blogs />
+        </Suspense>
         <Footer />
       </div>
     </main>
